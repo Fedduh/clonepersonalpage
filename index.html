@@ -21,7 +21,7 @@
 <body>
     <!-- Wrapper Start -->
     <div>
-        <div class="wrapper">
+        <div class="wrapper-header">
 
             <header>
                 <!-- Header Area Start (menu buttons)-->
@@ -50,7 +50,7 @@
                             <li><a href="#feedback">FEEDBACK</a></li>
                             <li><a href="#blog">BLOG</a></li>
                             <li><a href="#contact">CONTACT</a></li>
-                            <li class="hire-button"><a href="hireMeModal">HIRE ME</a></li>
+                            <li class="hire-button"><a href="#">HIRE ME</a></li>
 
                         </ul>
                     </div>
@@ -77,7 +77,7 @@
                         I make the visual for web and mobile application to be more interactive</p>
 
                     <div class="button-thin">
-                        <a>LET'S TALK</a>
+                        <a href="#">LET'S TALK</a>
                     </div>
                 </div>
                 <!-- Banner Content End -->
@@ -87,6 +87,7 @@
         <!-- Banner Area End -->
 
         <!-- About Area Start (About me) -->
+        <!-- wrapper for aobut me, including experience -->
         <div class="wrapper-70">
 
             <!-- Section Title Start -->
@@ -108,9 +109,9 @@
                         veritatis totam velit, esse pariatur in minima nostrum harum dolorum perferendis quasi
                         dolor autem deleniti inventore.</p>
 
-                    
-                        <a class="resume-button" href="#">DOWNLOAD MY CV</a>
-                    
+
+                    <a id="white-text" class="resume-button" href="#">DOWNLOAD MY CV</a>
+
                 </div>
 
                 <div class="resume-box-2">
@@ -120,7 +121,7 @@
                         scelerisque sapien at aliquet.</p>
 
                     <!-- About Progrees Items Start -->
-                    <div>
+                    <div class="resume-expert-details">
                         <!-- About Progress Bar Start -->
                         <h4>GRAPHIC DESIGN</h4>
 
@@ -133,7 +134,7 @@
                         <h4>CSS</h4>
 
                         <div class="progress">
-                            <div class="progress-bar"><span>90%</span></div>
+                            <div class="progress-bar bar-90"><span>90%</span></div>
                         </div>
                         <!-- About Progrees Bar End -->
 
@@ -141,7 +142,7 @@
                         <h4>JAVASCRIPT</h4>
 
                         <div class="progress">
-                            <div class="progress-bar"><span>70%</span></div>
+                            <div class="progress-bar bar-70"><span>70%</span></div>
                         </div>
                         <!-- About Progrees Bar End -->
 
@@ -149,7 +150,7 @@
                         <h4>WORDPRESS</h4>
 
                         <div class="progress">
-                            <div class="progress-bar"><span>50%</span></div>
+                            <div class="progress-bar bar-50"><span>50%</span></div>
                         </div>
                         <!-- About Progrees Bar End -->
                     </div>
@@ -158,238 +159,251 @@
             </div>
 
             <!-- About Info Start (Study and work experience) -->
-            <div>
-                <div>
-                    <div>
+            <div class="education-experience-container">
+
+                <div class="education-container">
+                    <div class="education">
+                        <h3><strong>EDU</strong>CATION</h3>
+
+                        <!-- About Info Item Start -->
                         <div>
-                            <h3><strong>EDU</strong>CATION</h3>
+                            <div class="two-blocks">
+                                <div class="two-blocks-child-a">
+                                    <p>2005-2007</p>
+                                    <h5><strong>NY UNIVERSITY</strong></h5>
+                                </div>
 
-                            <!-- About Info Item Start -->
-                            <div>
-                                <div>
-                                    <div>
-                                        <p>2005-2007</p>
-                                        <h5><strong>NY UNIVERSITY</strong></h5>
-                                    </div>
+                                <div class="two-blocks-child-b">
+                                    <h4><strong>GRAPHIC</strong> DESIGN</h4>
 
-                                    <div>
-                                        <h4><strong>GRAPHIC</strong> DESIGN</h4>
-
-                                        <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
-                                            tristique scelerisque sapien at aliquet.</p>
-                                    </div>
+                                    <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
+                                        tristique scelerisque sapien at aliquet.</p>
                                 </div>
                             </div>
-                            <!-- About Info Item End -->
-
-                            <!-- About Info Item Start -->
-                            <div>
-                                <div>
-                                    <div>
-                                        <p>2007-2008</p>
-                                        <h5><strong>NY UNIVERSITY</strong></h5>
-                                    </div>
-
-                                    <div>
-                                        <h4><strong>WEB</strong> DESIGN</h4>
-
-                                        <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
-                                            tristique scelerisque sapien at aliquet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- About Info Item End -->
-
-                            <!-- About Info Item Start -->
-                            <div>
-                                <div>
-                                    <div>
-                                        <p>2009-2010</p>
-                                        <h5><strong>NY UNIVERSITY</strong></h5>
-                                    </div>
-
-                                    <div>
-                                        <h4><strong>WEB</strong> DEVELOPMENT</h4>
-
-                                        <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
-                                            tristique scelerisque sapien at aliquet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- About Info Item End -->
                         </div>
                     </div>
-
-                    <div>
+                    <!-- About Info Item End --> 
+                    <!-- About Info Item Start -->
+                    <div class="education">
                         <div>
-                            <h3><strong>EX</strong>PERIENCE</h3>
-
-                            <!-- About Info Item Start -->
                             <div>
-                                <div>
-                                    <div>
-                                        <p>2007-2010</p>
-                                        <h5><strong>ENTER AD</strong></h5>
-                                    </div>
+                                <div class="two-blocks-child-a">
+                                    <p>2007-2008</p>
+                                    <h5><strong>NY UNIVERSITY</strong></h5>
+                                </div>
 
-                                    <div>
-                                        <h4><strong>GRAPHIC</strong> DESIGNER</h4>
+                                <div class="two-blocks-child-b">
+                                    <h4><strong>WEB</strong> DESIGN</h4>
 
-                                        <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
-                                            tristique scelerisque sapien at aliquet.</p>
-                                    </div>
+                                    <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
+                                        tristique scelerisque sapien at aliquet.</p>
                                 </div>
                             </div>
-                            <!-- About Info Item End -->
-
-                            <!-- About Info Item Start -->
+                        </div>
+                    </div>
+                    <!-- About Info Item End --> 
+                    <!-- About Info Item Start -->
+                    <div class="education">
+                        <div>
                             <div>
-                                <div>
-                                    <div>
-                                        <p>2011-2013</p>
-                                        <h5><strong>UNIHOST2U INC.</strong></h5>
-                                    </div>
+                                <div class="two-blocks-child-a">
+                                    <p>2009-2010</p>
+                                    <h5><strong>NY UNIVERSITY</strong></h5>
+                                </div>
 
-                                    <div>
-                                        <h4><strong>SENIOR</strong> DESIGNER</h4>
+                                <div class="two-blocks-child-b">
+                                    <h4><strong>WEB</strong> DEVELOPMENT</h4>
 
-                                        <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
-                                            tristique scelerisque sapien at aliquet.</p>
-                                    </div>
+                                    <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
+                                        tristique scelerisque sapien at aliquet.</p>
                                 </div>
                             </div>
-                            <!-- About Info Item End -->
-
-                            <!-- About Info Item Start -->
-                            <div>
-                                <div>
-                                    <div>
-                                        <p>2013-2014</p>
-                                        <h5><strong>EYELINE ANIMATION</strong></h5>
-                                    </div>
-
-                                    <div>
-                                        <h4><strong>GRAPHIC</strong> DESIGNER</h4>
-
-                                        <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
-                                            tristique scelerisque sapien at aliquet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- About Info Item End -->
                         </div>
                     </div>
                 </div>
+                <!-- About Info Item End -->
+
+                <div class="experience-container">
+                    <div class="experience">
+                        <h3><strong>EX</strong>PERIENCE</h3>
+
+                        <!-- About Info Item Start -->
+                        <div>
+                            <div>
+                                <div class="two-blocks-child-a">
+                                    <p>2007-2010</p>
+                                    <h5><strong>ENTER AD</strong></h5>
+                                </div>
+
+                                <div class="two-blocks-child-b">
+                                    <h4><strong>GRAPHIC</strong> DESIGNER</h4>
+
+                                    <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
+                                        tristique scelerisque sapien at aliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- About Info Item End -->
+
+                    <!-- About Info Item Start -->
+                    <div class="experience">
+                        <div>
+                            <div>
+                                <div class="two-blocks-child-a">
+                                    <p>2011-2013</p>
+                                    <h5><strong>UNIHOST2U INC.</strong></h5>
+                                </div>
+
+                                <div class="two-blocks-child-b">
+                                    <h4><strong>SENIOR</strong> DESIGNER</h4>
+
+                                    <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
+                                        tristique scelerisque sapien at aliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- About Info Item End -->
+
+                    <!-- About Info Item Start -->
+                    <div class="experience">
+                        <div>
+                            <div>
+                                <div class="two-blocks-child-a">
+                                    <p>2013-2014</p>
+                                    <h5><strong>EYELINE ANIMATION</strong></h5>
+                                </div>
+
+                                <div class="two-blocks-child-b">
+                                    <h4><strong>GRAPHIC</strong> DESIGNER</h4>
+
+                                    <p>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent
+                                        tristique scelerisque sapien at aliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About Info Item End -->
             </div>
-            <!-- About Info End -->
 
+            <div class="clear-both"></div>
         </div>
-        <!-- About Area End -->
+        <!-- About Info End -->
 
-        <!-- Services Area Start -->
-        <div>
-            <div>
-                <!-- Section Title Start -->
-                <div>
-                    <h2><strong>WHAT I DO</strong></h2>
-                </div>
-                <!-- Section Title End -->
-
-                <div>
-                    <!-- Service Item Start -->
-                    <div>
-                        <div class="service--icon">
-                            <i class="fa fa-laptop"></i>
-                        </div>
-
-                        <div>
-                            <h2>WEB <strong>DESIGN</strong> &amp; <strong>UI</strong></h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
-                                sunt veritatis totam velit.</p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-
-                    <!-- Service Item Start -->
-                    <div>
-                        <div class="service--icon">
-                            <i class="fa fa-object-group"></i>
-                        </div>
-
-                        <div>
-                            <h2>USER <strong>FLOW</strong> &amp; <strong>WIREFRAMES</strong></h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
-                                sunt veritatis totam velit.</p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-
-                    <!-- Service Item Start -->
-                    <div>
-                        <div class="service--icon">
-                            <i class="fa fa-paint-brush"></i>
-                        </div>
-
-                        <div>
-                            <h2>VISUAL <strong>DESIGN</strong></h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
-                                sunt veritatis totam velit.</p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-
-                    <!-- Service Item Start -->
-                    <div>
-                        <div class="service--icon">
-                            <i class="fa fa-mobile"></i>
-                        </div>
-
-                        <div>
-                            <h2>MOBILE <strong>APP</strong> DESIGN</h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
-                                sunt veritatis totam velit.</p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-
-                    <!-- Service Item Start -->
-                    <div>
-                        <div class="service--icon">
-                            <i class="fa fa-first-order"></i>
-                        </div>
-
-                        <div>
-                            <h2>LOGO <strong>DESIGN</strong></h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
-                                sunt veritatis totam velit.</p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-
-                    <!-- Service Item Start -->
-                    <div>
-                        <div class="service--icon">
-                            <i class="fa fa-clone"></i>
-                        </div>
-
-                        <div>
-                            <h2>PRINT <strong>DESIGN</strong></h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
-                                sunt veritatis totam velit.</p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-            </div>
-        </div>
-        <!-- Services Area End -->
     </div>
+    <!-- About Area End -->
+
+
+    <!-- Services Area Start -->
+    <div class="services-wrapper">
+        <div>
+            <!-- Section Title Start -->
+            <div class="services-header">
+                <h2><strong>WHAT I DO</strong></h2>
+                <hr />
+            </div>
+            <!-- Section Title End -->
+
+            <div class="services-flex">
+                <!-- Service Item Start -->
+                <div class="services-box">
+                    <div class="service--icon">
+                        <i class="fa fa-laptop"></i>
+                    </div>
+
+                    <div>
+                        <h2>WEB <strong>DESIGN</strong> &amp; <strong>UI</strong></h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
+                            sunt veritatis totam velit.</p>
+                    </div>
+                </div>
+                <!-- Service Item End -->
+
+                <!-- Service Item Start -->
+                <div class="services-box">
+                    <div class="service--icon">
+                        <i class="fa fa-object-group"></i>
+                    </div>
+
+                    <div>
+                        <h2>USER <strong>FLOW</strong> &amp; <strong>WIREFRAMES</strong></h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
+                            sunt veritatis totam velit.</p>
+                    </div>
+                </div>
+                <!-- Service Item End -->
+
+                <!-- Service Item Start -->
+                <div class="services-box">
+                    <div class="service--icon">
+                        <i class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <div>
+                        <h2>VISUAL <strong>DESIGN</strong></h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
+                            sunt veritatis totam velit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item End -->
+
+            <div class="services-flex">
+
+                <!-- Service Item Start -->
+                <div class="services-box">
+                    <div class="service--icon">
+                        <i class="fa fa-mobile"></i>
+                    </div>
+
+                    <div>
+                        <h2>MOBILE <strong>APP</strong> DESIGN</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
+                            sunt veritatis totam velit.</p>
+                    </div>
+                </div>
+                <!-- Service Item End -->
+
+                <!-- Service Item Start -->
+                <div class="services-box">
+                    <div class="service--icon">
+                        <i class="fa fa-first-order"></i>
+                    </div>
+
+                    <div>
+                        <h2>LOGO <strong>DESIGN</strong></h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
+                            sunt veritatis totam velit.</p>
+                    </div>
+                </div>
+                <!-- Service Item End -->
+
+                <!-- Service Item Start -->
+                <div class="services-box">
+                    <div class="service--icon">
+                        <i class="fa fa-clone"></i>
+                    </div>
+
+                    <div>
+                        <h2>PRINT <strong>DESIGN</strong></h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel, sint nisi possimus
+                            sunt veritatis totam velit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item End -->
+        </div>
+    </div>
+    </div>
+    <!-- Services Area End -->
     <!-- Wrapper End -->
 
 </body>

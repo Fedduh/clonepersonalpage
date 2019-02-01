@@ -1,6 +1,7 @@
 body {
   font-family: Raleway;
   margin: 0;
+  background-color: rgb(241, 241, 241);
 }
 
 a, a:visited, a:hover {
@@ -21,6 +22,10 @@ h2 span {
   font-weight: 100;
 }
 
+h3 {
+  font-size: 150%;
+}
+
 .up-button {
   position: fixed;
   bottom: 20px;
@@ -36,11 +41,11 @@ h2 span {
 /* ----------------------------- */
 /* header menu */
 /* ----------------------------- */
-.wrapper {
+.wrapper-header {
   border-bottom: 1px solid rgba(0,0,0,0.8);
-  box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.35);
-  /* margin: 0; */
+  box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.35); 
   padding-top: 10px;
+  background-color: white; 
 }
 
 header {
@@ -81,8 +86,9 @@ nav li {
 .hire-button a {
   border: 2px solid black;
   margin: 0;
-  padding: 10px;
+  padding: 12px;
   vertical-align: center;
+  font-weight: bold;
 }
 
 /* ----------------------------- */
@@ -90,15 +96,20 @@ nav li {
 /* ----------------------------- */
 .wrapper-70 {
   width: 70%;
-  margin: 0 auto;
-  background-color: rgb(195, 216, 191);
-  height: calc(100vh - 100px);
+  margin: 0 auto; 
 }
 
+.profile-background { 
+  background-image: url(../img/DSC02425.JPG);
+  background-size: cover; 
+  background-repeat: no-repeat;  
+  height: calc(100vh - 100px); 
+}
+ 
 .profile-information {
   width: 35%;
   padding-top: 20vh;
-  margin-left: 10px;
+  margin-left: 10px; 
 }
 
 .button-thin {
@@ -112,7 +123,7 @@ nav li {
 }
 
 /* ----------------------------- */
-/* About section */
+/* About section and resume */
 /* ----------------------------- */
 .about-header {
   text-align: center;
@@ -135,10 +146,12 @@ nav li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .resume-box-2 {
-  width: 50%;
+  width: 45%;
   margin: 20px 10px 0px;
 }
 
@@ -151,18 +164,139 @@ nav li {
   /* inline-block otherwise margin doesn't work */
 }
 
+#white-text {
+  color: white;
+}
+
+/* expert in part */
+.resume-expert-details h4 {
+  margin-bottom: 8px;
+}
+
+/* .progress -> .progress-bar + span + bar-XX */
 .progress {
   width: 100%;
-  border-bottom: 1px solid grey;
+  border-bottom: 5px solid rgb(211, 211, 211);
+  position: relative;
 }
 
-.progress-bar span {
-  /* background-color: black; */
+.progress-bar  {
   color: white;
   display: inline-block;
-  border-bottom: 6px solid black;
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: -5px;;
 }
 
-.bar-60 {
-  padding-left: 60%;
+.progress-bar span { 
+  color: white; 
+  background-color: black;
+  padding: 4px;
 }
+
+/* Bar is "full" at 90%. Some correction needed */
+.bar-60 {
+  padding-left: calc(60% * 0.9);
+}
+.bar-90 {
+  padding-left: calc(90% * 0.9);
+}
+.bar-70 {
+  padding-left: calc(70% * 0.9);
+}
+.bar-50 {
+  padding-left: calc(50% * 0.9);
+}
+
+/* ------------------------- */
+/* Education and experience  */
+/* ------------------------- */
+
+/* margin of this class doesn't seem to work */
+.education-experience-container {
+  margin-bottom: 50px;
+}
+
+.education-container {
+  width: calc(50% - 15px);
+  float: left;
+  background-color: white;
+}
+
+.experience-container {
+  width: calc(50% - 15px);
+  float: right;
+  background-color: white;
+}
+
+.education, .experience { 
+  padding: 0 20px;
+  margin: 0px;
+}
+
+.two-blocks-child-a {
+  float: left;
+  width: 30%; 
+}
+
+.two-blocks-child-a > p {
+  margin-top: 0px;
+}
+
+.two-blocks-child-b {
+  float: left;
+  width: 60%; 
+}
+ 
+.two-blocks-child-b > h4 {
+  margin-top: 0px;
+}
+ 
+.clear-both {
+  clear: both;
+}
+
+/* ------------------------- */
+/* Services                  */
+/* ------------------------- */
+
+.services-wrapper {
+  background-image: url(../img/bg.jpg); 
+  background-position: center 60%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+
+.services-header {
+  text-align: center;
+}
+
+.services-header h2 {
+  margin: 0;
+  padding-top: 40px;
+  color: white;
+}
+
+.services-header hr {
+  width: 120px;
+  border-color: white;
+  color: white;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.services-flex {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.services-box {
+  padding: 20px;
+  color: white;
+}
+
+/* Rest of the styling is not finished.. */
