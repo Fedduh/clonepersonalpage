@@ -1,0 +1,168 @@
+body {
+  font-family: Raleway;
+  margin: 0;
+}
+
+a, a:visited, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* h1 not bold standard */
+h1, h3 {
+  font-weight: normal;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h2 span {
+  font-weight: 100;
+}
+
+.up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* ----------------------------- */
+/* header menu */
+/* ----------------------------- */
+.wrapper {
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+  box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.35);
+  /* margin: 0; */
+  padding-top: 10px;
+}
+
+header {
+  width: 70%;
+  background-color: white;
+  margin: 0 auto 10px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; /* horizontal spread*/
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  /* display: inline-block; */
+  float: left;
+  margin: 0 10px;
+}
+
+.logo-text {
+  /* display: inline; */
+  width: 250px;
+}
+
+.logo-text h1, .logo-text p {
+  margin: 0px 10px;
+}
+
+.hire-button a {
+  border: 2px solid black;
+  margin: 0;
+  padding: 10px;
+  vertical-align: center;
+}
+
+/* ----------------------------- */
+/* Profile background part */
+/* ----------------------------- */
+.wrapper-70 {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(195, 216, 191);
+  height: calc(100vh - 100px);
+}
+
+.profile-information {
+  width: 35%;
+  padding-top: 20vh;
+  margin-left: 10px;
+}
+
+.button-thin {
+  margin-top: 30px;
+}
+
+.button-thin a {
+  border: 1px solid black;
+  padding: 10px 20px;
+  vertical-align: center;
+}
+
+/* ----------------------------- */
+/* About section */
+/* ----------------------------- */
+.about-header {
+  text-align: center;
+}
+
+.about-header h2 {
+  margin: 0;
+  padding-top: 40px;
+}
+
+.about-header hr {
+  width: 120px;
+  border-color: black;
+  color: black;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resume-box-2 {
+  width: 50%;
+  margin: 20px 10px 0px;
+}
+
+.resume-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  /* inline-block otherwise margin doesn't work */
+}
+
+.progress {
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.progress-bar span {
+  /* background-color: black; */
+  color: white;
+  display: inline-block;
+  border-bottom: 6px solid black;
+}
+
+.bar-60 {
+  padding-left: 60%;
+}
